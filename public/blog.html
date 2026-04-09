@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | Drashti Dobariya</title>
+  <meta name="description" content="Blog posts by Drashti Dobariya." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">DD</span>
+        <div class="brand-text">
+          <p class="name">Drashti Dobariya</p>
+          <p class="tag">Web Design &amp; Development Student</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a class="btn btn-small" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Blog</h2>
+        </div>
+
+        <article class="card post">
+          <p class="pill">Project</p>
+          <h2>How I Built Wild Rose Foundry (Database → Frontend → Integration)</h2>
+          <p class="muted small">Posted: Feb 2026</p>
+
+          <p>
+            I built Wild Rose Foundry as a real database-driven e-commerce project. Instead of starting with design first,
+            I planned the system properly by creating the database and tables before building the UI.
+          </p>
+
+          <p>
+            First, I designed the database structure (products, users, orders, and cart-related data). After that, I connected
+            the database using PHP and MySQL so product data could load dynamically instead of being hardcoded. Once the backend
+            worked, I created the frontend using HTML and CSS and added JavaScript for interactive features like cart behavior
+            and improved user experience.
+          </p>
+
+          <p>
+            The best part was integrating everything together — products displayed from the database and orders stored properly
+            during checkout. This project taught me how important planning is and how frontend and backend work as one complete system.
+          </p>
+
+          <div class="post-actions">
+            <a class="btn" href="projects.html">View Project</a>
+            <a class="btn btn-ghost" href="https://dev.interactivedesign.ca/~ddobariya/cprg310/final/" target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Drashti Dobariya.</p>
+      <a class="text-link" href="#main">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

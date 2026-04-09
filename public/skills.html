@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills | Drashti Dobariya</title>
+  <meta name="description" content="Skills of Drashti Dobariya – Web Design and Development." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">DD</span>
+        <div class="brand-text">
+          <p class="name">Drashti Dobariya</p>
+          <p class="tag">Web Design &amp; Development Student</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a class="btn btn-small" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="card">
+            <h3>Technical</h3>
+            <ul class="chips" aria-label="Technical skills">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive Web Design</li><li>UI/UX Principles</li>
+              <li>GitHub</li><li>VS Code</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li><li>Canva</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Programming &amp; Development</h3>
+            <ul class="chips" aria-label="Programming skills">
+              <li>Python</li><li>PHP</li><li>C</li><li>C++</li><li>Java</li><li>MySQL</li>
+            </ul>
+            <p class="muted small">Comfortable with database-driven apps and modular, maintainable code.</p>
+          </article>
+
+          <article class="card">
+            <h3>Soft Skills</h3>
+            <ul class="chips" aria-label="Soft skills">
+              <li>Communication</li><li>Team Collaboration</li><li>Time Management</li><li>Creativity</li>
+              <li>Problem Solving</li><li>Multitasking</li><li>Attention to Detail</li><li>Adaptability</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Drashti Dobariya.</p>
+      <a class="text-link" href="#main">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

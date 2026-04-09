@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Drashti Dobariya</title>
+  <meta name="description" content="About Drashti Dobariya – Web Design and Development student." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">DD</span>
+        <div class="brand-text">
+          <p class="name">Drashti Dobariya</p>
+          <p class="tag">Web Design &amp; Development Student</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a class="btn btn-small" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="card">
+            <h3>What I do</h3>
+            <p>
+              I design and build responsive websites and web apps, focusing on clean UI, accessibility, and smooth user experience.
+              I enjoy turning ideas into real, working products — from layout and components to backend data flows.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>What I’m looking for</h3>
+            <p>
+              Co‑op / internship opportunities, junior developer roles, or freelance projects where I can contribute to real products, learn fast,
+              and collaborate with a supportive team.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Strengths</h3>
+            <ul class="list">
+              <li>Strong attention to detail and design consistency</li>
+              <li>Comfortable working in teams with Git/GitHub</li>
+              <li>Organized, deadline‑driven, and adaptable</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Drashti Dobariya.</p>
+      <a class="text-link" href="#main">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

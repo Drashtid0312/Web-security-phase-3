@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard | Drashti Dobariya</title>
+  <meta name="description" content="Secure user dashboard for profile viewing and updates." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">DD</span>
+        <div class="brand-text">
+          <p class="name">Drashti Dobariya</p>
+          <p class="tag">Web Design &amp; Development Student</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <button id="logoutBtn" class="btn btn-small" type="button">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head dashboard-head">
+          <div>
+            <p class="pill">Secure Area</p>
+            <h2>User Dashboard</h2>
+            <p class="muted" id="welcomeMessage">Welcome back</p>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="card dashboard-card">
+            <h3>Current Profile</h3>
+            <div class="profile-info">
+              <div class="info-row">
+                <span class="info-label">Name</span>
+                <span class="info-value" id="currentName">Loading...</span>
+              </div>
+
+              <div class="info-row">
+                <span class="info-label">Email</span>
+                <span class="info-value" id="currentEmail">Loading...</span>
+              </div>
+
+              <div class="info-row info-row-bio">
+                <span class="info-label">Bio</span>
+                <span class="info-value" id="currentBio">Loading...</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="card dashboard-card">
+            <h3>Update Profile</h3>
+
+            <div id="messageBox" class="status-message hidden" role="alert" aria-live="polite"></div>
+
+            <form id="profileForm" class="dashboard-form" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  maxlength="50"
+                  placeholder="Enter your name"
+                  required
+                />
+                <small class="field-error" id="nameError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  maxlength="100"
+                  placeholder="Enter your email"
+                  required
+                />
+                <small class="field-error" id="emailError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea
+                  id="bio"
+                  name="bio"
+                  rows="6"
+                  maxlength="500"
+                  placeholder="Write a short bio"
+                ></textarea>
+                <small class="field-error" id="bioError"></small>
+              </div>
+
+              <button type="submit" class="btn">Save Changes</button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Drashti Dobariya.</p>
+      <a class="text-link" href="#main">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
